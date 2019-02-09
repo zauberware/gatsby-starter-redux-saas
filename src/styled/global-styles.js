@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle(props => css`
   ${styledNormalize}
   
   body {
-    font-size: 16px;
+    font-size: 17px;
     font-family: ${props.theme.fonts.sans};
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle(props => css`
   }
 
   code{
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     font-weight: 300;
     padding: 3px;
     margin: 0 3px;

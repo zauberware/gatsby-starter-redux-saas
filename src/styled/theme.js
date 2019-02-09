@@ -4,7 +4,7 @@ const primaryDark = '#323D5C'
 const greyLight = '#E9EEFE'
 const greyDark = '#6F6069'
 const fontSizes = [
-  14, 18, 22, 26, 32, 42, 52, 58
+  14, 17, 19, 23, 32, 28, 44, 56
 ]
 const space = [
   0, 4, 8, 16, 32, 64, 128, 256
@@ -14,8 +14,8 @@ const serif = '"Maitree", system-ui, sans-serif'
 const sans = '"Hind", system-ui, sans-serif'
 
 export default {
-  ...fontSizes,
-  ...space,
+  fontSizes: fontSizes,
+  space: space,
   fonts: { sans, serif },
   breakpoints: ['40em', '52em', '64em'],
   colors: {
@@ -87,27 +87,20 @@ export default {
   },
   headings: {
     h1: {
-      fontSize: fontSizes[6],
+      fontSize: fontSizes[7],
       fontWeight: 700,
     },
     h2: {
-      fontSize: fontSizes[5],
+      fontSize: fontSizes[6],
       fontWeight: 700,
     },
     h3: {
-      fontSize: fontSizes[4],
+      fontSize: fontSizes[5],
       fontWeight: 700,
     },
     h4: {
-      fontSize: fontSizes[2],
+      fontSize: fontSizes[3],
       fontWeight: 700,
     }
-  },
-  icons: {
-    defaultDisplay: 'flex',
-    defaultSize: '16px',
-    sizeMini: '16px',
-    sizeMedium: '32px',
-    sizeLarge: '64px'
   }
 }

@@ -26,7 +26,7 @@ const Hero = () => (
           style={{borderLeft: `5px dotted #7D97E5`}}
         >
           <Box>
-            <Heading as='h1' variant='h1' fontSize={[6,7,8]} m={0}>
+            <Heading as='h1' variant='h1' fontSize={[5,6,7]} m={0}>
               {data.heroJson.displayTitle}
             </Heading>
             <P fontSize={3} mb={3}>
@@ -40,10 +40,10 @@ const Hero = () => (
           flexWrap='wrap'
         >
           <Card variant='primary' p={3} width={[1, 3/5]} style={{ '&:hover': { margin: 1}}}>
-            <Heading as='h2' variant='h3'>
+            <Heading as='h2' variant='h2'>
               Gatsby Starter
             </Heading>
-            <P fontSize={4} mb={4}>Redux, Apollo, Authentication, SEO friendly, GWT, Responsive, Markdown, Static content, Web-Fonts, SSR, Testing</P>
+            <P fontSize={3} mb={4}>Redux, Apollo, Authentication, SEO friendly, GWT, Responsive, Markdown, Static content, Web-Fonts, SSR, Testing</P>
             <Flex justifyContent='center' alignItems='center'>
               <Box 
                 as='a' 
@@ -65,7 +65,7 @@ const Hero = () => (
           </Card>
 
           <Card variant='primaryDark' p={3} width={[1, 2/5]} mx={[3, 0]}>
-            <Heading as='h2' variant='h4' style={{color: 'white'}}>
+            <Heading as='h2' variant='h3' style={{color: 'white'}}>
               RubyOnRails Backend
             </Heading>
             <P fontSize={3} mb={4}>Rails 5, Authentication with devise + JWT, GraphQL, CORS, SSL</P>

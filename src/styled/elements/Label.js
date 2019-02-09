@@ -17,7 +17,7 @@ const Label = styled(Text)`
 Label.defaultProps = {
   as: 'label',
   color: 'greyDark',
-  fontSize: 2,
+  fontSize: 1,
   m: 0,
   p: 0,
   pt: 3,

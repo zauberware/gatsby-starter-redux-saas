@@ -31,11 +31,13 @@ yarn && npm start
 
 ## What's included?
 
-### 1. **Redux** 
+### 1. Redux
 This starter uses [react-redux](https://github.com/reduxjs/react-redux) to hold business data and fire actions in the application. Read more abour [redux](https://redux.js.org/basics/usage-with-react) and [combinedReducers](https://redux.js.org/api/combinereducers).
 
 ### 2. Apollo Client
 To communicate with the application server this starter uses [apollo-client](https://github.com/apollographql/apollo-client). Set the GraphQL endpoint with `APOLLO_API_URL` in `.env.development` and `.env.production`.
+
+With GraphQL your website gains access to hundreds of [APIs](https://github.com/APIs-guru/graphql-apis) worldwide and there are plenty of [libraries and articles](https://github.com/chentsulin/awesome-graphql) for GraphQL.
 
 ### 3. Authentication:
 Ready to go authentication with [JSON Web Tokens](https://jwt.io/introduction/). The starter saves the current user in the redux store. We have implemented a demo backend with RubyOnRails, but you can connect any other graphQL backend. If the backend  uses JWT the changes in the code will be trivial.
