@@ -51,7 +51,7 @@ No more large, unoptimized images which dramatically slow down your site. The st
 ### 5. SEO friendly
  The starter uses [react-helmet](https://github.com/nfl/react-helmet) and [gatsby-plugin-sitemap](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sitemap) to make search engines happy.
 
-### 6. Google Wemaster Tools
+### 6. Google Webmaster Tools
 Define your google *webmaster key* to confirm the ownership in Google Webmaster Tools. Choose *Meta-Tag* when the Google asks you for the confirmation method. Set the key here in `gatsby-config.js`. The starter **does not** integrate Google Analytics so if you need it [install it by yourself](https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/).
 
 ### 7. Responsive UIs
