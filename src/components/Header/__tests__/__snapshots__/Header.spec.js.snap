@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<nav
+  className="sc-bdVaJa sc-gZMcBi gCoWvL"
+>
+  <div
+    className="sc-bdVaJa sc-bxivhb djuapn"
+    width="100%"
+  >
+    <div
+      className="sc-bdVaJa sc-ifAKCX WvoHu"
+    >
+      <h1
+        className="sc-bdVaJa sc-EHOje sc-bZQynM kKcxZB"
+        style={
+          Object {
+            "fontSize": 25,
+          }
+        }
+      >
+        <a
+          href="/"
+          style={
+            Object {
+              "color": "white",
+              "textDecoration": "none",
+            }
+          }
+        >
+          Seitentitel
+        </a>
+      </h1>
+      <p
+        className="sc-bdVaJa sc-EHOje sc-gqjmRU hmgTND"
+        color="white"
+        fontSize={2}
+      >
+        <a
+          href="/"
+          style={
+            Object {
+              "color": "#d3d2d1",
+              "paddingRight": "20px",
+            }
+          }
+        >
+          Home
+        </a>
+        <a
+          href="/app/plans"
+          style={
+            Object {
+              "color": "#d3d2d1",
+              "paddingRight": "20px",
+            }
+          }
+        >
+          Pricing
+        </a>
+        <a
+          href="/app/profile"
+          style={
+            Object {
+              "color": "#d3d2d1",
+              "paddingRight": "20px",
+            }
+          }
+        >
+          Profile
+        </a>
+      </p>
+      <div>
+        <p
+          className="sc-bdVaJa sc-EHOje sc-gqjmRU hmgTND"
+          color="white"
+          fontSize={2}
+        >
+          To get the full app experience, you’ll need to
+           
+          <a
+            href="/app/login"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "#d3d2d1",
+              }
+            }
+          >
+            log in
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+  </div>
+</nav>
+`;

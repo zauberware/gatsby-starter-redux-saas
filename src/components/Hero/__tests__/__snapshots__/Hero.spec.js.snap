@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero renders correctly 1`] = `
+<div
+  className="sc-bdVaJa sc-htpNat jocheC"
+>
+  <div
+    className="sc-bdVaJa sc-ifAKCX jYmEKF"
+  >
+    <div
+      className="sc-bdVaJa eAkHCv"
+    >
+      <h1
+        className="sc-bdVaJa sc-EHOje sc-bZQynM kMuPVV"
+        fontSize={
+          Array [
+            6,
+            7,
+            8,
+          ]
+        }
+      >
+        Display title
+      </h1>
+      <p
+        className="sc-bdVaJa sc-EHOje sc-gqjmRU cwURln"
+        fontSize={3}
+      >
+        Subtitle
+      </p>
+      <a
+        aria-label="Star this repo on GitHub"
+        className="github-button"
+        data-icon="octicon-star"
+        data-show-count="true"
+        data-size="large"
+      >
+        Star
+      </a>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "free",
+    "title": "Basic",
+    "price": "Free",
+    "featured": false,
+    "features": [
+      "3 Domains",
+      "100 API requests per month"
+    ]
+  },
+  {
+    "slug": "pro",
+    "title": "Pro",
+    "price": "29€/m",
+    "featured": true,
+    "features": [
+      "15 Domains",
+      "1000 API requests per month"
+    ]
+  },
+  {
+    "slug": "enterprise",
+    "title": "Enterprise",
+    "price": "per request",
+    "featured": false,
+    "features": [
+      "Unlimited Domains",
+      "Unlimited API requests"
+    ]
+  }
+]

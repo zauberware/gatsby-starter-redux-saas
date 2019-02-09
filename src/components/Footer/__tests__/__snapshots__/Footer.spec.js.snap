@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<footer
+  className="sc-bdVaJa sc-iwsKbI dJKMkL"
+>
+  <div
+    className="sc-bdVaJa sc-bxivhb fhvOTI"
+  >
+    <div
+      className="sc-bdVaJa sc-ifAKCX kqdpKR"
+    >
+      <div
+        className="sc-bdVaJa hPaROM"
+        width={
+          Array [
+            1,
+          ]
+        }
+      >
+        <h4
+          className="sc-bdVaJa sc-EHOje sc-bZQynM cuCRPK"
+          color="white"
+        >
+          Home
+        </h4>
+        <p
+          className="sc-bdVaJa sc-EHOje sc-gqjmRU sFrRH"
+          color="white"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "A text in the footer",
+            }
+          }
+          fontSize={2}
+        />
+      </div>
+      <div
+        className="sc-bdVaJa hPaROM"
+        width={
+          Array [
+            1,
+          ]
+        }
+      >
+        <h4
+          className="sc-bdVaJa sc-EHOje sc-bZQynM cuCRPK"
+          color="white"
+        >
+          Contact
+        </h4>
+        <p
+          className="sc-bdVaJa sc-EHOje sc-gqjmRU sFrRH"
+          color="white"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "A text in the footer",
+            }
+          }
+          fontSize={2}
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-bdVaJa gzJBxY"
+  >
+    <div
+      className="sc-bdVaJa sc-bxivhb gbgRUr"
+    >
+      <p
+        className="sc-bdVaJa sc-EHOje sc-gqjmRU ivXjAx"
+        color="white"
+        fontSize={1}
+      >
+        © 2018 - 
+        2019
+         
+        <a
+          href="https://www.zauberware.com"
+          target="_blank"
+        >
+          zauberware technologies
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+`;
