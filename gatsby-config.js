@@ -4,11 +4,11 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Saas starter`,
-    description: `An instant-starter for Saas products with GatsbyJS`,
-    author: `@magicsoup.io`,
+    title: `Gatsby Redux Saas starter`,
+    description: `A Gatsby starter for Saas products. Uses redux and apollo and a graphql token auth backend.`,
+    author: `@zauberware`,
     image: `website-preview.jpg`,
-    siteUrl: `https://gatsby-saas.magicsoup.io`,
+    siteUrl: `https://gatsby-redux.zauberware.com`,
     googleSiteVerification: `[place-google-webmaster-tools-key-here]`,
   },
   plugins: [
@@ -17,7 +17,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Overpass']
+          families: ['Maitree:300,400,700', 'Hind:400,700']
         }
       }
     },

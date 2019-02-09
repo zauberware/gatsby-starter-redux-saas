@@ -1,40 +1,59 @@
----
-slug: readme
-title: "Readme.md"
-date: "2017-08-10"
----
-# gatsby-starter-saas
+# gatsby-starter-redux-saas
 
-The GatsbyJS Starter Saas to build your next Saas product on gatsby! See [demo](https://gatsby-saas.magicsoup.io)
+The GatsbyJS Starter to build your next Saas product on gatsby! See [demo](https://gatsby-redux.zauberware.com)
+
+![zauberware technologies](https://github.com/zauberware/gatsby-starter-redux-saas/raw/master/static/website-preview.jpg)
+
 
 ## Quick start
 
 1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+Use the Gatsby CLI to create a new site, specifying the default starter.
 
-    ```sh
-    gatsby new my-saas-product https://github.com/magicsoup-io/gatsby-starter-saas
-    cd my-saas-product && yarn && npm start
-    ```
+```sh
+gatsby new my-saas-product https://github.com/zauberware/gatsby-starter-redux-saas
+cd my-saas-product
+cp env_sample .env.development
+yarn && npm start
+```
 
-## What's special about our magicsoup.io starter?
+**Backend:** Make sure that you have a GraphQL Backend with a working JSON Web Token authentication running on http://0.0.0.0:3000/. You don't have a backend? Clone this repo [this](https://github.com/zauberware/rails-devise-graphql).
 
-1.  **`instant-soup`**: This starter is works perfect for Saas products and has the [magicsoup.io/stock](https://github.com/magicsoup-io/magicsoup-stock) module included!
-
-2.  **`hot-and-spicy`**: This starter will always use the most recent version of [magicsoup.io/stock](https://github.com/magicsoup-io/magicsoup-stock).
-
-3. **`ready-to-serve`**: Saas with (dummy-)login, private routes, ready to create the next million dollar idea.
 
 ## What's included?
 
+1. **Handle business logic**: This starter uses [react-redux](https://github.com/reduxjs/react-redux) to hold data and fire actions in the application. 
 
-We at [zauberware](https://www.zauberware.com/) love to create code fast and easy for   have included [styled-components](https://www.styled-components.com/) and [styled-system](https://github.com/jxnblk/styled-system) in our [magicsoup.io/stock](https://github.com/magicsoup-io/magicsoup-stock).
+2. **Apollo Client**: To communicate with the application server the starter uses [apollo-client](https://github.com/apollographql/apollo-client). Set the GraphQL endpoint in `.env.development` and `.env.production`.
 
-This starter is combining those benefits with GatsbyJS' automatic slug and page creation via [gatsby-transform-remark](https://www.styled-components.com/) and page or SEO globals via [gatsby-transform-json](https://www.styled-components.com/). 
+3. **Authentication**: Ready to go authentication with [JSON Web Tokens](https://jwt.io/introduction/). The starter saves the current user in the redux store. We have implemented a demo backend with RubyOnRails, but you can connect any other graphQL backend. If the backend  uses JWT the changes in the code will be trivial.
 
-This starter combines the two best things in the world: Writing your content with markdown and render it with `styled-components`. The great `marksy` library enables you to set components for compiled markdown pages.
+4. **Optimized Images**: No more large, unoptimized images which dramatically slow down your site. The starter uses [gatsby-image](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-image) for optimized image loading.
 
-This starter uses `gatsby-plugin-web-font-loader` to load whatever font is needed for your page. Look at the gatsby-config.js to see configuration options.
+5. **SEO friendly**: The starter uses [react-helmet](https://github.com/nfl/react-helmet) and [gatsby-plugin-sitemap](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sitemap) to make search engines happy.
 
-This starter includes everything you need to start testing with `jest`. Just run `npm test` to see results for already implements specs.
+6. **Google Wemaster Tools**: Define your google *webmaster key* to confirm the ownership in Google Webmaster Tools. Choose *Meta-Tag* when the Google asks you for the confirmation method. Set the key here in `gatsby-config.js`. The starter **does not** integrate Google Analytics so if you need it [install it by yourself](https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/).
+
+7. **Responsive UIs**: This starter uses the base component library [magicsoup.io/stock](https://github.com/magicsoup-io/magicsoup-stock). magicsoup.io gives you are rapid start to create wonderful UIs with [styled-components](https://github.com/styled-components/styled-components) and [styled-system](https://github.com/jxnblk/styled-system).
+
+8. **Static content with JSON and Markdown**:
+This starter is combining those benefits with GatsbyJS' automatic slug and page creation via [gatsby-transform-remark](https://www.styled-components.com/) or setting static page data with [gatsby-transform-json](https://www.styled-components.com/). 
+
+9. **Markdown to StyledComponents**: When you love `styled-components` you will come to the point where you have to define styling for Markdown or other HTML output from a CMS. The starter uses `marksy` to map the generated HTML to custom defined `styled-components`. Not all are set, so do it by yourself under `src/templates/default-page.js`.
+
+10. **Web-Fonts**: Every modern website or web app has a custom font. The starter uses [gatsby-plugin-web-font-loader](https://github.com/escaladesports/gatsby-plugin-web-font-loader) to load fonts from any server: Custom, Fontdeck, Fonts.com, Google, Typekit. Read more about the [webfontloader](https://github.com/typekit/webfontloader).
+
+11. **SSR**: The starter is SSR ready. Make `npm run build` to create the production resources. Choose your favorite deploment method.
+
+12. **Testing**: The starter includes everything you need to test your components with [jest](https://jestjs.io/docs/en/getting-started). Run `npm test` and see the run the first tests we have implemented.
+
+13. **Backend**: If you need a demo backend than have a look at this basic [RubyOnRails boilerplate](https://github.com/zauberware/rails-devise-graphql). It implements authentication with  [devise](https://github.com/plataformatec/devise) + [graphql-ruby](https://graphql-ruby.org/getting_started).
+
+
+## Author
+
+__Script:__ <https://github.com/zauberware/gatsby-starter-redux-saas>  
+__Author website:__ [https://www.zauberware.com](https://www.zauberware.com)    
+
+![zauberware technologies](https://avatars3.githubusercontent.com/u/1753330?s=200&v=4)

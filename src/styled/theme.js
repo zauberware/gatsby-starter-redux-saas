@@ -1,8 +1,8 @@
 
-const primary = '#8A2BE2'
-const primaryDark = '#4B0082'
-const greyLight = '#ededf0'
-const greyDark = '#b7b9c4'
+const primary = '#236167'
+const primaryDark = '#044046'
+const greyLight = '#DAE7E8'
+const greyDark = '#AAB7B8'
 const fontSizes = [
   12, 16, 18, 22, 26, 36, 48, 58
 ]
@@ -10,18 +10,19 @@ const space = [
   0, 4, 8, 16, 32, 64, 128, 256
 ]
 
+const serif = '"Maitree", system-ui, sans-serif'
+const sans = '"Hind", system-ui, sans-serif'
+
 export default {
   ...fontSizes,
   ...space,
+  fonts: { sans, serif },
   breakpoints: ['40em', '52em', '64em'],
   colors: {
     primary: primary,
     primaryDark: primaryDark,
     greyLight: greyLight,
     greyDark: greyDark,
-  },
-  fonts: {
-    sans: '"Overpass", system-ui, sans-serif'
   },
   shadows: {
     small: '0 0 4px rgba(0, 0, 0, .225)',
@@ -74,22 +75,25 @@ export default {
       boxShadow: '0 0 24px rgba(0, 0, 0, .125)',
     }
   },
+  Heading: {
+    fontFamily: serif
+  },
   headings: {
     h1: {
       fontSize: fontSizes[6],
-      fontWeight: 400,
+      fontWeight: 700,
     },
     h2: {
       fontSize: fontSizes[5],
-      fontWeight: 400,
+      fontWeight: 700,
     },
     h3: {
       fontSize: fontSizes[4],
-      fontWeight: 400,
+      fontWeight: 700,
     },
     h4: {
       fontSize: fontSizes[2],
-      fontWeight: 400,
+      fontWeight: 700,
     }
   },
   icons: {

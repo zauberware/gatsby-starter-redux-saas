@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-saas",
-  "description": "An instant-starter for Saas products. Faked backend, so bring your own.",
+  "name": "gatsby-starter-saas-redux",
+  "description": "An Gatsby starter for Saas products. Uses redux and apollo and a graphql token auth backend.",
   "version": "1.0.0",
-  "author": "@magicsoup.io",
+  "author": "zauberware technologies",
   "contributors": [
     {
       "name": "Philipp Siegmund",
@@ -53,13 +53,19 @@
     "universal-cookie": "^3.0.7"
   },
   "keywords": [
+    "redux",
+    "react-redux",
+    "apollo",
+    "apollo-client",
+    "authentication",
     "magicsoup.io",
     "magicsoup",
     "styled-components",
     "styled-system",
     "gatsby",
     "starter",
-    "boilerplate"
+    "boilerplate",
+    "gatsby-starter"
   ],
   "license": "MIT",
   "scripts": {
@@ -72,10 +78,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/magicsoup-io/gatsby-starter-saas"
+    "url": "https://github.com/zauberware/gatsby-starter-redux-saas"
   },
   "bugs": {
-    "url": "https://github.com/magicsoup-io/gatsby-starter-saas/issues"
+    "url": "https://github.com/zauberware/gatsby-starter-redux-saas/issues"
   },
   "devDependencies": {
     "babel-jest": "^24.1.0",

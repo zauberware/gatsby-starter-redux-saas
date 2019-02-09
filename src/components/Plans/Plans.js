@@ -47,7 +47,7 @@ const Plans = () => {
                   </P>
                   <Button 
                     variant={plan.node.featured ? 'white' : 'primary'} 
-                    onClick={() => window.alert(`Select plan ${plan.node}`)}>
+                    onClick={() => window.alert(`Select plan ${plan.node.title}`)}>
                     Select plan
                   </Button>
                 </Card>
