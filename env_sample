@@ -1,0 +1,3 @@
+# Define your endpoint to an GraphQL backend
+# View the sample under [TODO]
+APOLLO_API_URL=http://0.0.0.0:3000/graphql

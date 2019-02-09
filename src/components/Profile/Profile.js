@@ -18,7 +18,7 @@ class Profile extends Component{
     
     return (
       <Container>
-        <Heading as='h1' variant='h1'>Welcome back, {name}!</Heading>
+        <Heading as='h1' variant='h1'>Welcome back, {firstName} {lastName}!</Heading>
         <Card 
           variant='grey' 
           maxWidth={600} 

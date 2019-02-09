@@ -45,6 +45,7 @@ class Form extends React.Component {
 
     const cookies = new Cookies()
     if (data.login) cookies.set('bearer_token', data.login.token)
+    else cookies.remove('bearer_token')
 
     if (data && data.login) {
       navigate('/app/profile')
