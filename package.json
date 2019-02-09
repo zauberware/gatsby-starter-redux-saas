@@ -14,7 +14,7 @@
     }
   ],
   "dependencies": {
-    "@magicsoup.io/stock": "^0.0.13",
+    "@magicsoup.io/stock": "^0.0.14",
     "apollo-client": "^2.4.12",
     "apollo-client-preset": "^1.0.8",
     "apollo-link-context": "^1.0.14",
@@ -65,9 +65,10 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "start": "npm run develop",
+    "start": "npm run clean && npm run develop",
     "serve": "gatsby serve",
-    "test": "jest"
+    "test": "jest",
+    "clean": "rm -rf .public/ && rm -rf .cache/"
   },
   "repository": {
     "type": "git",

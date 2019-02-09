@@ -754,10 +754,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.3.tgz#6310a047f12d21a1036fb031317219892440416f"
   integrity sha512-4zAPlpDEh2VwXswwr/t8xGNDGg8RQiPxtxZ3qQEXyQsBV39ptTdESCjuBvGze1nLMVrxmTIKmnO/nAV8Tqjjzg==
 
-"@magicsoup.io/stock@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@magicsoup.io/stock/-/stock-0.0.13.tgz#e9656f1cc2748d412cbb0ab32e512b55709e3e25"
-  integrity sha512-bYIUYTQtcFan/YNdqCN/hHQisk5Npuc9zNoOO216PTi43QUG7ImMDtDYyAjRC4exNzHgVe7l3SqiVRnfcUz3xA==
+"@magicsoup.io/stock@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@magicsoup.io/stock/-/stock-0.0.14.tgz#af5f9d13fba6c3cd9900f1d2974e7a998e36b943"
+  integrity sha512-/VQjoVvjum0pSuwI38Yo3VYbVFBxIqr87kLlCCczwQ9blH/G0ejJ7CM3avNQyS3VNIlIuB7Ju/D3mHHn88LL7g==
   dependencies:
     styled-components "^4.0.1"
     styled-system "^3.2.1"

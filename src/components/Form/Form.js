@@ -80,7 +80,7 @@ class Form extends React.Component {
           <Input
             type='email'
             name='email'
-            autocomplete='email'
+            autoComplete='email'
             value={email}
             onChange={this.onChange}
             ref={this.emailInput}
@@ -92,7 +92,7 @@ class Form extends React.Component {
           Password
           <Input
             type='password'
-            autocomplete='current-password'
+            autoComplete='current-password'
             name='password'
             value={password}
             onChange={this.onChange}
