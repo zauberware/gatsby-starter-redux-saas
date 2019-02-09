@@ -90,6 +90,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
       />
       <Helmet>
         <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/railscasts.css" />
       </Helmet>
     </Fragment>
   )

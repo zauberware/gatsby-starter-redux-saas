@@ -1,10 +1,10 @@
 
-const primary = '#236167'
-const primaryDark = '#044046'
-const greyLight = '#DAE7E8'
-const greyDark = '#AAB7B8'
+const primary = '#7D97E5'
+const primaryDark = '#323D5C'
+const greyLight = '#E9EEFE'
+const greyDark = '#6F6069'
 const fontSizes = [
-  12, 16, 18, 22, 26, 36, 48, 58
+  14, 18, 22, 26, 32, 42, 52, 58
 ]
 const space = [
   0, 4, 8, 16, 32, 64, 128, 256
@@ -76,7 +76,8 @@ export default {
     }
   },
   Heading: {
-    fontFamily: serif
+    fontFamily: serif,
+    color: primaryDark,
   },
   headings: {
     h1: {

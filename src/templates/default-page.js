@@ -1,6 +1,7 @@
 import React, { Fragment, createElement } from "react"
 import { graphql } from "gatsby"
 import marksy from 'marksy'
+import Highlight from 'react-highlight.js'
 
 import {
   Hero,
@@ -66,19 +67,25 @@ const compile = marksy({
     // del () {},
     img (props) { 
       return (
-        <Flex justifyContent='center'>
+        <Flex as='span' justifyContent='center'>
           <Box 
+            as='span'
             width={[1, 3/4, 2/3]} 
             py={5}>
-            <Image {...props} width='100%'/>
+            <Image {...props} style={{ maxWidth: '100%'}}/>
           </Box>
         </Flex>
       )
     },
-    // code ({language, code}) {},
+    code ({language, code}) {
+      return <Highlight language={language}>{code}</Highlight>
+    },
+    pre ({language, code}) {
+      return <Highlight language={language}>{code}</Highlight>
+    },
     // codespan ({children}) {},
   },
-});
+})
 
 export default ({ data }) => {
   const { markdownRemark } = data // data.markdownRemark holds our post data
@@ -94,7 +101,7 @@ export default ({ data }) => {
         keywords={
           [`gatsby`, `application`, `react`]
         } />
-      <Container>
+      <Container maxWidth={990}>
         {compiled.tree}
       </Container>
     </Layout>

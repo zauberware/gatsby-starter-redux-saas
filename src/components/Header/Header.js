@@ -25,11 +25,11 @@ const Header = ({ siteTitle, props }) => (
           </Link>
         </Heading>
         <P color='white' mt={0}>
-          <Link to='/' style={{color: '#d3d2d1', paddingRight: '20px' }}>Home</Link>
-          <Link to='/app/plans' style={{color: '#d3d2d1', paddingRight: '20px' }}>Pricing</Link>
-          <Link to='/app/profile' style={{color: '#d3d2d1', paddingRight: '20px' }}>Profile</Link>
+          <Link to='/' style={{color: '#E9EEFE', paddingRight: '20px' }}>Home</Link>
+          <Link to='/app/plans' style={{color: '#E9EEFE', paddingRight: '20px' }}>Pricing</Link>
+          <Link to='/app/profile' style={{color: '#E9EEFE', paddingRight: '20px' }}>Profile</Link>
         </P>
-        <Box mb={[2,0]}><Status color='white' linkColor='#d3d2d1' /></Box>
+        <Box mb={[2,0]}><Status color='white' linkColor='#E9EEFE' /></Box>
       </Flex>
     </Container>
   </Menu>
