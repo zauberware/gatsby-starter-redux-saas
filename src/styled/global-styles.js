@@ -25,6 +25,16 @@ const GlobalStyle = createGlobalStyle(props => css`
     }
   }
 
+  code{
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding: 3px;
+    margin: 0 3px;
+    border-radius: 4px;
+    line-height: 1;
+    background-color: ${themeGet('colors.greyLight')};
+  }
+
 `)
 export default () => (
   <Fragment>

@@ -1,5 +1,4 @@
 {
   "displayTitle": "Gatsby Redux Saas starter",
-  "subTitle": "An Gatsby starter for your next Saas product. Uses react-redux, apollo-client, magicsoup.io, styled-components, styled-system.",
-  "github": "https://github.com/zauberware/gatsby-starter-redux-saas"
+  "subTitle": "A Gatsby Redux Saas starter for your next Saas product. Uses react-redux, apollo-client, magicsoup.io, styled-components, styled-system."
 }

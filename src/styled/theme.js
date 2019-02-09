@@ -67,10 +67,16 @@ export default {
       textAlign: 'center',
     },
     primary: {
-      border: '3px solid ' + primary,
       padding: space[4],
       textAlign: 'center',
       backgroundColor: primary,
+      color: 'white',
+      boxShadow: '0 0 24px rgba(0, 0, 0, .125)',
+    },
+    primaryDark: {
+      padding: space[4],
+      textAlign: 'center',
+      backgroundColor: primaryDark,
       color: 'white',
       boxShadow: '0 0 24px rgba(0, 0, 0, .125)',
     }

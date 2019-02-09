@@ -101,7 +101,7 @@ export default ({ data }) => {
         keywords={
           [`gatsby`, `application`, `react`]
         } />
-      <Container maxWidth={990}>
+      <Container maxWidth={960}>
         {compiled.tree}
       </Container>
     </Layout>

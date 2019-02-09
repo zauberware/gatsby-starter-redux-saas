@@ -68,8 +68,8 @@ class Form extends React.Component {
     return (
       <form onSubmit={this.onSubmit}>
         <P>
-          For this demo, please log in with the email <strong>gatsby</strong> and the
-          password <strong>demo</strong>.
+          For this demo, please log in with the email <code>demo@zauberware.com</code> and the
+          password <code>demo123</code>.
         </P>
         { data && !data.login && 
           <Box bg='red' p={3} my={3}>
