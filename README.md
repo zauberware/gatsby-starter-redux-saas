@@ -1,6 +1,6 @@
 # gatsby-starter-redux-saas
 
-The GatsbyJS Starter to build your next Saas product on gatsby! See [demo](https://gatsby-redux.zauberware.com)
+The GatsbyJS Starter to build your next SaaS product on gatsby! See [demo](https://gatsby-redux.zauberware.com)
 
 ![zauberware technologies](https://github.com/zauberware/gatsby-starter-redux-saas/raw/master/static/website-preview.jpg)
 

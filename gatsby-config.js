@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Redux Saas starter`,
-    description: `A Gatsby starter for Saas products. Uses redux and apollo and a graphql token auth backend.`,
+    title: `Gatsby Redux SaaS starter`,
+    description: `A Gatsby starter for SaaS products. Uses redux and apollo and a graphql token auth backend.`,
     author: `@zauberware`,
     image: `website-preview.jpg`,
     siteUrl: `https://gatsby-redux.zauberware.com`,
