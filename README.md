@@ -58,13 +58,13 @@ This starter uses the base component library [magicsoup.io/stock](https://github
 This starter is combining those benefits with GatsbyJS' automatic slug and page creation via [gatsby-transform-remark](https://www.styled-components.com/) or setting static page data with [gatsby-transform-json](https://www.styled-components.com/). 
 
 ### 9. Convert Markdown to StyledComponents
-When you love `styled-components` and `styled-system` we have good news: Map your styled-components to markdown or other HTML output from a file system or any other external API. The starter uses `marksy` to map the generated HTML to custom defined `styled-components`. Not all are set, so do it by yourself under `src/templates/default-page.js`.
+When you love `styled-components` and `styled-system` we have good news: Map your styled-components to markdown or other HTML output from a file system or any other external API. The starter uses `marksy` to map the generated HTML to custom defined `styled-components`. Not all are set, so do it by yourself under `src/templates/default-page.js`.
 
 ### 10. Web-Fonts
 Every modern website or web app has a custom font. The starter uses [gatsby-plugin-web-font-loader](https://github.com/escaladesports/gatsby-plugin-web-font-loader) to load fonts from any server: Custom, Fontdeck, Fonts.com, Google, Typekit. Read more about the [webfontloader](https://github.com/typekit/webfontloader).
 
 ### 11. SSR
-The starter is SSR ready. Make `npm run build` to create the production resources. Choose your favorite [deployment method](https://www.gatsbyjs.org/docs/deploying-and-hosting/) and prepare your app for production.
+The starter is SSR ready. Make `npm run build` to create the production resources. Choose your favorite [deployment method](https://www.gatsbyjs.org/docs/deploying-and-hosting/) and prepare your app for production.
 
 ### 12. Testing
 The starter includes everything you need to test your components with [jest](https://jestjs.io/docs/en/getting-started). Run `npm test` and see the run the first tests we have implemented.
