@@ -67,7 +67,7 @@ Every modern website or web app has a custom font. The starter uses [gatsby-plug
 The starter is SSR ready. Make `npm run build` to create the production resources. Choose your favorite [deployment method](https://www.gatsbyjs.org/docs/deploying-and-hosting/) and prepare your app for production.
 
 ### 12. Testing
-The starter includes everything you need to test your components with [jest](https://jestjs.io/docs/en/getting-started). Run `npm test` and see the run the first tests we have implemented.
+The starter includes everything you need to test your components with [jest](https://jestjs.io/docs/en/getting-started). Run `npm test` and see the run the first tests we have implemented.
 
 ### 13. Backend
 If you need a demo backend than have a look at this basic [RubyOnRails boilerplate](https://github.com/zauberware/rails-devise-graphql). It implements authentication with  [devise](https://github.com/plataformatec/devise) + [graphql-ruby](https://graphql-ruby.org/getting_started).
