@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import { Provider } from 'react-redux'
 import { ApolloProvider } from 'react-apollo'
+import {StripeProvider} from 'react-stripe-elements';
 
 import store from './src/redux/store'
 import client from './src/apollo/client'
@@ -14,7 +15,9 @@ export default ({ element }) => {
   return (
     <Provider store={store}>
       <ApolloProvider client={client}>
-        {element}
+        <StripeProvider apiKey={process.env.STRIPE_API_KEY}>
+          {element}
+        </StripeProvider>
       </ApolloProvider>
     </Provider>
     )

@@ -44,10 +44,10 @@ class Layout extends React.Component {
       store.dispatch(loginUser(data.tokenLogin))
       this.setState(data)
 
-      if (data.tokenLogin) cookies.set('bearer_token', data.tokenLogin.token, '/')
+      if (data.tokenLogin) cookies.set('bearer_token', data.tokenLogin.token, { path: '/'})
       else cookies.remove('bearer_token')
     }else{
-      store.dispatch(logoutUser())
+      // store.dispatch(logoutUser())
       this.setState({user: null})
     }
     

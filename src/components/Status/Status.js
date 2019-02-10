@@ -19,8 +19,7 @@ class Status extends Component {
     let color = this.props.color || 'inherit'
     let linkColor = this.props.linkColor || 'primary'
     const { user } = this.props
-
-    if (!user) {
+    if (!user || !user.email) {
       details = (
         <P color={color} mt={0}>
           To get the full app experience, you’ll need to

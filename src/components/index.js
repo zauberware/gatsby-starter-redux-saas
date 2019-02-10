@@ -5,6 +5,7 @@ export { default as Layout } from './Layout'
 export { default as SEO } from './Seo'
 export { default as Footer } from './Footer'
 
+export { default as StripeCheckout } from './StripeCheckout'
 export { default as Status } from './Status'
 export { default as Form } from './Form'
 export { default as Profile } from './Profile'

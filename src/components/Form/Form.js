@@ -44,7 +44,7 @@ class Form extends React.Component {
     store.dispatch(loginUser(data.login))
 
     const cookies = new Cookies()
-    if (data.login) cookies.set('bearer_token', data.login.token)
+    if (data.login) cookies.set('bearer_token', data.login.token, { path: '/' })
     else cookies.remove('bearer_token')
 
     if (data && data.login) {

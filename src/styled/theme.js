@@ -14,8 +14,8 @@ const serif = '"Maitree", system-ui, sans-serif'
 const sans = '"Hind", system-ui, sans-serif'
 
 export default {
-  fontSizes: fontSizes,
-  space: space,
+  fontSizes,
+  space,
   fonts: { sans, serif },
   breakpoints: ['40em', '52em', '64em'],
   colors: {
