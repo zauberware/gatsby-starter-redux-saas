@@ -30,6 +30,8 @@ const GET_PLANS = gql`
         startDate
         endDate
         status
+        cancelAt
+        cancelAtPeriodEnd
         plan{
           id
           name
@@ -161,11 +163,14 @@ class UserPlans extends Component {
                             {subscription.plan.name}
                           </P>
                           <P>
-                            Status: <strong>{subscription.status}</strong><br/>
-                            Begin: {subscription.startDate}<br/>
-                            Will end: {subscription.endDate}
+                            Status: 
+                            {subscription.status == 'active' && subscription.cancelAtPeriodEnd ? <strong> Canceled to end of period</strong> : <strong> {subscription.status}</strong>}
+                            <br/>
+                            Creation date: {subscription.startDate}
+                            <br/>
+                            {subscription.status == 'active' && subscription.cancelAtPeriodEnd && <Fragment>Will end: {subscription.cancelAt}</Fragment> }
                           </P>
-                          {subscription.status !== 'canceled' && 
+                          {!subscription.cancelAtPeriodEnd && 
                             <Link
                               variant={'primary'} 
                               onClick={() => this.cancelPlan(subscription.plan)}>
@@ -204,7 +209,7 @@ class UserPlans extends Component {
                             </P>
                             {
                               data.me.subscriptions.filter(sub => (
-                                sub.status !== 'canceled' && sub.plan.id == plan.id
+                                !sub.cancelAtPeriodEnd && sub.plan.id == plan.id
                               )).length
                               ? <Button
                                   variant={plan.featured ? 'white' : 'primary'} 
