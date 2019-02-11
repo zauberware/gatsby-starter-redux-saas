@@ -27,59 +27,43 @@ const TOKEN_LOGIN = gql`
 `
 
 class Layout extends React.Component {
+
   
-  componentWillMount = async () => {
+  // componentWillMount = async () => {
 
-    const cookies = new Cookies()
-    const bearerToken = cookies.get('bearer_token')
+  //   const cookies = new Cookies()
+  //   const bearerToken = cookies.get('bearer_token')
 
-    if (bearerToken && bearerToken !== ''){
+  //   if (bearerToken && bearerToken !== ''){
       
-      // Login with bearerToken from cookies
-      store.dispatch(loginUser({ token: bearerToken }))
-      const { data } = await client.mutate({
-        mutation: TOKEN_LOGIN
-      })
+  //     // Login with bearerToken from cookies
+  //     store.dispatch(loginUser({ token: bearerToken }))
+  //     const { data } = await client.mutate({
+  //       mutation: TOKEN_LOGIN
+  //     })
 
-      store.dispatch(loginUser(data.tokenLogin))
-      this.setState(data)
+  //     store.dispatch(loginUser(data.tokenLogin))
+  //     this.setState(data)
 
-      if (data.tokenLogin) cookies.set('bearer_token', data.tokenLogin.token, { path: '/'})
-      else cookies.remove('bearer_token')
-    }else{
-      // store.dispatch(logoutUser())
-      this.setState({user: null})
-    }
+  //     if (data.tokenLogin) cookies.set('bearer_token', data.tokenLogin.token, { path: '/'})
+  //     else cookies.remove('bearer_token')
+  //   }else{
+  //     // store.dispatch(logoutUser())
+  //     this.setState({user: null})
+  //   }
     
-  }
+  // }
 
   render() {
     const { children } = this.props
     return (
       <ThemeProvider theme={theme}>
         <Fragment>
-          <StaticQuery
-            query={graphql`
-              query SiteTitleQuery {
-                site {
-                  siteMetadata {
-                    title
-                  }
-                }
-              }
-            `}
-            render={data => (
-              <Fragment>
-                <Header siteTitle={data.site.siteMetadata.title} />
-                <Box 
-                  as='main' 
-                  py={6}>
-                  {children}
-                </Box>
-                <Footer />
-              </Fragment>
-            )}
-          />
+          <Header siteTitle={'Gatsby Starter'} />
+          <Box as='main' py={6}>
+            {children}
+          </Box>
+          <Footer />
           <GlobalStyle />
         </Fragment>
       </ThemeProvider>

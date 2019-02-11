@@ -144,7 +144,7 @@ class UserPlans extends Component {
                   <ThankYou />
                 }
 
-                {!formState || formState == 'finished' && 
+                {!formState && 
                   <Fragment>
                     <Heading as='h2' variant='h3' pt={5}>
                       { `Your subscription` }

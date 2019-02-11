@@ -17,4 +17,4 @@ export {
 } from './Plans'
 export { default as Login } from './Login'
 export { default as LogoutButton } from './LogoutButton'
-export { default as PrivateRoute } from './PrivateRoute'
+export { default as AppRoute } from './AppRoute'
