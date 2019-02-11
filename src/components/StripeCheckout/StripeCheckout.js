@@ -1,39 +1,35 @@
 import React, {Component} from 'react';
 import {CardElement, injectStripe} from 'react-stripe-elements';
+import { Box, Heading, Button, Flex } from '@magicsoup.io/stock'
+import client from '../../apollo/client'
+import gql from 'graphql-tag'
+
+
 
 class CheckoutForm extends Component {
-  constructor(props) {
-    super(props);
-    this.submit = this.submit.bind(this);
-  }
-
-  async submit(ev) {
-    const {token, error} = await this.props.stripe.createToken({
-      name: "Name"
-    })
-
-    if(error){
-      window.alert('Create token error')
-    }else{
-      let response = await fetch("/charge", {
-        method: "POST",
-        headers: {"Content-Type": "text/plain"},
-        body: token.id
-      });
-      if (response.ok) console.log("Purchase Complete!")
-    }
-    
-  }
 
   render() {
+    const { onRestart, onSubmit, plan, stripe } = this.props
     return (
-      <div className="checkout">
-        <p>Would you like to complete the purchase?</p>
-        <CardElement />
-        <button onClick={this.submit}>Send</button>
-      </div>
-    );
+      <Box py={3}>
+        <Heading as='h2' variant='h3'>Complete the purchase for plan {plan.name}:</Heading>
+        <Box my={5} >
+          <CardElement style={{base: {fontSize: '18px'}}}/>
+        </Box>
+        <Flex justifyContent='space-between'>
+          <Button 
+            variant='default'
+            onClick={() => onRestart(stripe)}>
+            Back
+          </Button>
+          <Button 
+            variant='primary' onClick={() => onSubmit(stripe)}>
+            Send
+          </Button>
+        </Flex>
+      </Box>
+    )
   }
 }
 
-export default injectStripe(CheckoutForm);
+export default injectStripe(CheckoutForm)

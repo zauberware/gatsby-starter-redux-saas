@@ -2,7 +2,7 @@
 import React, { Fragment, Component } from 'react'
 import { Container, Box, Heading, Card } from '@magicsoup.io/stock'
 import { P } from '../../styled'
-import { Plans } from '../../components'
+import { UserPlans } from '../../components'
 
 import { connect } from 'react-redux'
 
@@ -34,6 +34,7 @@ class Profile extends Component{
               E-Mail: {email}
             </P>
           </Card>
+          <UserPlans />
         </Container>
       </Fragment>
     )

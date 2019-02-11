@@ -9,7 +9,12 @@ export { default as StripeCheckout } from './StripeCheckout'
 export { default as Status } from './Status'
 export { default as Form } from './Form'
 export { default as Profile } from './Profile'
-export { default as Plans } from './Plans'
+export { 
+  Plans, 
+  UserPlans,
+  ThankYou,
+  WeWillMissYou
+} from './Plans'
 export { default as Login } from './Login'
 export { default as LogoutButton } from './LogoutButton'
 export { default as PrivateRoute } from './PrivateRoute'

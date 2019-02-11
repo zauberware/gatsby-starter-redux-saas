@@ -20,7 +20,9 @@ exports.createPages = ({ page, graphql, actions }) => {
   // dynamic routes under /app/*
   const appRoutes = [
     'profile',
-    'plans'
+    'plans',
+    'thank-you',
+    'we-will-miss-you',
   ]
   appRoutes.forEach(element => {
     createPage({

@@ -7,6 +7,8 @@ import {
   Plans,
   Login,
   PrivateRoute,
+  ThankYou,
+  WeWillMissYou,
 } from '../components'
 
 import { P } from '../styled'
@@ -17,12 +19,12 @@ const App = () => (
     <Container>
       <Router>
         <PrivateRoute path='/app/profile' component={Profile} />
+        <PrivateRoute path='/app/thank-you' component={ThankYou}/>
+        <PrivateRoute path='/app/we-will-miss-you' component={WeWillMissYou}/>
         <Plans path='/app/plans' />
         <Login path='/app/login' />
         <PrivateRoute path='/app/' component={Profile} />
       </Router>
-      <hr/>
-      <P mt={5} fontWeight={700}>Define other private routes under <code>/src/pages/app.js</code></P>
     </Container>
   </Layout>
 )

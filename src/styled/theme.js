@@ -55,6 +55,14 @@ export default {
         color: primary,
         backgroundColor: '#fff'
       }
+    },
+    default: {
+      color: greyDark,
+      backgroundColor: greyLight,
+      '&:hover': {
+        color: '#fff',
+        backgroundColor: greyDark,
+      }
     }
   },
   cards: {
