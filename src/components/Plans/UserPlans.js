@@ -23,7 +23,7 @@ const GET_PLANS = gql`
       featured
     }
 
-    me{
+    account{
       subscriptions{
         id
         status
@@ -150,12 +150,12 @@ class UserPlans extends Component {
                       { `Your subscription` }
                     </Heading>
 
-                    {!data.me.subscriptions.length && 
+                    {!data.account.subscriptions.length && 
                       <P>You are currently at the free plan</P>
                     }
 
                     <Flex flexWrap='wrap' alignItems='center'>
-                      {data.me.subscriptions.map(subscription => ( 
+                      {data.account.subscriptions.map(subscription => ( 
                         <Card width={[1, 1/2]} p={3} key={`subscription-${subscription.id}`}>
                           <P fontSize={3}>
                             {subscription.plan.name}
@@ -184,7 +184,7 @@ class UserPlans extends Component {
                 {!formState && 
                   <Fragment>
                     <Heading as='h2' variant='h3' pt={5}>
-                      { data.me.subscriptions.length ? `Change plan` : `Select plan` }
+                      { data.account.subscriptions.length ? `Change plan` : `Select plan` }
                     </Heading>
 
                     <Flex flexWrap='wrap' alignItems='center'>
@@ -206,7 +206,7 @@ class UserPlans extends Component {
                               {plan.description}
                             </P>
                             {
-                              data.me.subscriptions.filter(sub => (
+                              data.account.subscriptions.filter(sub => (
                                 !sub.cancelAtPeriodEnd && sub.plan.id == plan.id
                               )).length
                               ? <Button
