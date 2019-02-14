@@ -28,8 +28,6 @@ const GET_PLANS = gql`
         id
         status
         startDate
-        endDate
-        status
         cancelAt
         cancelAtPeriodEnd
         plan{
