@@ -13,6 +13,7 @@ export const wrapRootElement = wrapWithProvider
 export const onRenderBody = ({ setPostBodyComponents }, options) => {
   return setPostBodyComponents([
     <script
+      id="stripe-js"
       src="https://js.stripe.com/v3"
       async={true}
     />

@@ -87,6 +87,14 @@ export default {
       backgroundColor: primaryDark,
       color: 'white',
       boxShadow: '0 0 24px rgba(0, 0, 0, .125)',
+    },
+    error: {
+      backgroundColor: 'red',
+      color: 'white',
+    },
+    success:{
+      backgroundColor: 'green',
+      color: 'white',
     }
   },
   Heading: {

@@ -1,2 +1,2 @@
-import StripeCheckout from './StripeCheckout'
-export default StripeCheckout
+export { default as StripeCheckout } from './StripeCheckout'
+export { default as PaymentRequestButton } from './PaymentRequestButton'

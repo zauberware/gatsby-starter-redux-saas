@@ -20,21 +20,23 @@ const GET_PLANS = gql`
       name
       description
       formattedPrice
+      priceCents
       featured
     }
-
-    account{
-      subscriptions{
-        id
-        status
-        startDate
-        cancelAt
-        cancelAtPeriodEnd
-        plan{
+    me{
+      account{
+        subscriptions{
           id
-          name
-          description
-          formattedPrice
+          status
+          startDate
+          cancelAt
+          cancelAtPeriodEnd
+          plan{
+            id
+            name
+            description
+            formattedPrice
+          }
         }
       }
     }
@@ -150,12 +152,12 @@ class UserPlans extends Component {
                       { `Your subscription` }
                     </Heading>
 
-                    {!data.account.subscriptions.length && 
+                    {!data.me.account.subscriptions.length && 
                       <P>You are currently at the free plan</P>
                     }
 
                     <Flex flexWrap='wrap' alignItems='center'>
-                      {data.account.subscriptions.map(subscription => ( 
+                      {data.me.account.subscriptions.map(subscription => ( 
                         <Card width={[1, 1/2]} p={3} key={`subscription-${subscription.id}`}>
                           <P fontSize={3}>
                             {subscription.plan.name}
@@ -184,7 +186,7 @@ class UserPlans extends Component {
                 {!formState && 
                   <Fragment>
                     <Heading as='h2' variant='h3' pt={5}>
-                      { data.account.subscriptions.length ? `Change plan` : `Select plan` }
+                      { data.me.account.subscriptions.length ? `Change plan` : `Select plan` }
                     </Heading>
 
                     <Flex flexWrap='wrap' alignItems='center'>
@@ -206,7 +208,7 @@ class UserPlans extends Component {
                               {plan.description}
                             </P>
                             {
-                              data.account.subscriptions.filter(sub => (
+                              data.me.account.subscriptions.filter(sub => (
                                 !sub.cancelAtPeriodEnd && sub.plan.id == plan.id
                               )).length
                               ? <Button

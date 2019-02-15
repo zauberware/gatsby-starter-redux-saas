@@ -5,6 +5,7 @@ import { P } from '../../styled'
 import { UserPlans } from '../../components'
 
 import { connect } from 'react-redux'
+import { Account } from '../../components';
 
 const mapStateToProps = (props) => {
   const { user } = props
@@ -35,6 +36,7 @@ class Profile extends Component{
                 E-Mail: {email}
               </P>
             </Card>
+            <Account />
             <UserPlans />
           </Container>
           }
