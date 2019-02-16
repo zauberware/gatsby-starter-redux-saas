@@ -1,7 +1,6 @@
 language: node_js
 node_js:
-  - 10
-script:
-  - npm install
-  - npm run test
-  - npm run build
+  - '10.0'
+
+dist: trusty
+sudo: false
