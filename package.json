@@ -1,6 +1,6 @@
 {
   "name": "gatsby-starter-saas-redux",
-  "description": "A Gatsby starter for SaaS products. Uses redux, apollo and a graphql token auth backend.",
+  "description": "A Gatsby starter for SaaS products. Uses redux, apollo and a graphql token auth backend. ",
   "version": "1.0.0",
   "author": "zauberware technologies",
   "contributors": [
