@@ -1,6 +1,11 @@
 language: node_js
 node_js:
-  - '10.0'
-install: ./bin/npm install
-dist: trusty
-sudo: false
+  - "stable"
+cache:
+  directories:
+    - node_modules
+script:
+  - npm test
+  - npm run build
+on:
+  branch: buildbot
